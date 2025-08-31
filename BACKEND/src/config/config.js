@@ -1,5 +1,5 @@
 const dotenv = require("dotenv");
-dotenv.config();
+dotenv.config({quiet: true});
 
 const _config = {
     PORT: process.env.PORT,

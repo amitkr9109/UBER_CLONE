@@ -126,10 +126,10 @@ const CaptainHome = () => {
     <>
       <main className='w-full h-screen relative overflow-hidden'>
         <div className={`upper-logo-div fixed flex items-center justify-between w-full p-2 ${captainConfirmRide ? "opacity-0 pointer-events-none" : "opacity-100 z-50"}`}>
-          <div className="logo-image w-20">
+          <div className="logo-image w-16">
             <img className='w-full' src="https://pngimg.com/d/uber_PNG24.png" alt="" />
           </div>
-          <button onClick={handleLogout} className='w-15 h-15 bg-white flex items-center justify-center rounded-full cursor-pointer text-2xl'><i className="ri-logout-box-line"></i></button>
+          <button onClick={handleLogout} className='w-12 h-12 bg-white flex items-center justify-center rounded-full cursor-pointer text-2xl'><i className="ri-logout-box-line"></i></button>
         </div>
         <div className="image-div-upper h-full w-full">
           <LiveTrackingHome />

@@ -35,11 +35,11 @@ const CaptainRiding = () => {
   return (
     <>
       <main className='w-full h-screen'>
-        <div className="upper-logo-div fixed flex items-center justify-between w-full p-2">
+        <div className="upper-logo-div fixed flex items-center gap-44 w-full p-2 z-20">
           <div className="logo-image w-20">
             <img className='w-full' src="https://pngimg.com/d/uber_PNG24.png" alt="" />
           </div>
-          <Link to="/captain-home" className='w-15 h-15 bg-white flex items-center justify-center rounded-full cursor-pointer text-2xl'><i className='ri-home-5-line'></i></Link>
+          <Link to="/captain-home" className='w-12 h-12 bg-white flex items-center justify-center rounded-full cursor-pointer text-2xl'><i className='ri-home-5-line'></i></Link>
         </div>
         <div className="map-image-div w-full h-4/5">
           <LiveTracking 

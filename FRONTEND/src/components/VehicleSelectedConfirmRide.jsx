@@ -46,31 +46,31 @@ const VehicleSelectedConfirmRide = (props) => {
             </div>   
           </div>
         </div>
-        <div className="left-right-container flex gap-5 my-10">
+        <div className="left-right-container flex gap-5 my-5">
           <div className="left-side flex items-center gap-5 rounded-md">
             <h2 className="icon text-2xl"><i className="ri-map-pin-2-fill"></i></h2>
           </div>
           <div className="right-side flex flex-col">
-            <h2 className='font-semibold text-2xl'>562/11-A</h2>
-            <h4 className="text-lg font-thin pr-2">{props.pickUp}</h4>
+            <h2 className='font-semibold text-xl'>562/11-A</h2>
+            <h4 className="text-sm font-thin pr-3">{props.pickUp}</h4>
             <div className="line w-[90vw] h-[1px] bg-black mt-2"></div>
           </div>
         </div>
-        <div className="left-right-container flex gap-5 my-10">
+        <div className="left-right-container flex gap-5 my-5">
           <div className="left-side flex items-center gap-5 rounded-md">
             <h2 className="icon text-2xl"><i className="ri-checkbox-blank-fill"></i></h2>
           </div>
           <div className="right-side flex flex-col">
-            <h2 className='font-semibold text-2xl'>562/11-A</h2>
-            <h4 className="text-lg font-thin pr-2">{props.destination}</h4>
+            <h2 className='font-semibold text-xl'>562/11-A</h2>
+            <h4 className="text-sm font-thin pr-2">{props.destination}</h4>
             <div className="line w-[90vw] h-[1px] bg-black mt-2"></div>
           </div>
         </div>
-        <div className="payment flex items-center gap-5 my-10">
+        <div className="payment flex items-center gap-5 my-5">
           <h2 className="icon font-semibold text-2xl"><i className="ri-layout-top-fill"></i></h2>
           <div className="right">
-            <h1 className='font-semibold text-2xl'>₹{props.fare[props.vehicleType]}</h1>
-            <h2 className='font-thin text-xl'>Cash Cash</h2>
+            <h1 className='font-semibold text-xl'>₹{props.fare[props.vehicleType]}</h1>
+            <h2 className='font-thin text-lg'>Cash Cash</h2>
           </div>
         </div>
         <button onClick={() => {

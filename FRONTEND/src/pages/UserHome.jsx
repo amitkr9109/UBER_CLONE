@@ -248,7 +248,7 @@ const UserHome = () => {
           <LiveTrackingHome />
         </div>
         <div className="w-full h-screen absolute top-0 flex flex-col justify-end pointer-events-none">
-          <div className="bg-white w-full h-[30%] p-5 relative pointer-events-auto">
+          <div className="bg-white w-full h-[30%] px-5 py-2 relative pointer-events-auto">
             <div className="heading flex items-center justify-between">
               <h1 className='font-semibold text-2xl'>Find a trip</h1>
               <h4 ref={panelCloseRef} onClick={() => {setPanelOpen(false)}} className='font-semibold text-2xl opacity-0 cursor-pointer active:scale-95'><i className="ri-arrow-down-wide-line"></i></h4>
@@ -268,7 +268,7 @@ const UserHome = () => {
                 }}
                 value={pickUp}
                 onChange={handlePickUpChange}
-                className='bg-[#eeee] px-14 py-5 w-full rounded-md text-base my-5' 
+                className='bg-[#eeee] px-14 py-4 w-full rounded-md text-base my-5' 
               />
               <input
                 type="text" 
@@ -283,7 +283,7 @@ const UserHome = () => {
                 }}
                 value={destination}
                 onChange={handleDestinationChange}
-                className='bg-[#eeee] px-14 py-5 w-full rounded-md text-base my-2' 
+                className='bg-[#eeee] px-14 py-4 w-full rounded-md text-base my-2' 
               />
             </form>  
           </div>

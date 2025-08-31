@@ -27,7 +27,7 @@ const UserRiding = () => {
   return (
     <>
       <main className='w-full h-screen'>
-        <div className="upper-logo-div fixed flex items-center justify-between w-full p-2">
+        <div className="upper-logo-div fixed flex items-center gap-38 w-full p-2 z-50">
           <div className="logo-image w-25">
             <img className='w-full' src="https://www.logo.wine/a/logo/Uber/Uber-Logo.wine.svg" alt="" />
           </div>
@@ -54,7 +54,7 @@ const UserRiding = () => {
             <div className="right flex flex-col">
               <h1 className='font-medium text-lg uppercase flex justify-end'>{ride?.captain.fullname.firstname + " " + ride?.captain.fullname.lastname}</h1>
               <h2 className='font-semibold uppercase text-2xl flex justify-end'>{ride?.captain.vehicle.plate}</h2>
-              <p className='font-thin text-lg flex justify-end'>White Suziki S-Presso LXI</p>
+              <p className='font-thin text-sm flex justify-end'>White Suziki S-Presso LXI</p>
               <div className="flex justify-end gap-2">
                 <i className="ri-star-fill font-semibold text-xl"></i>
                 <h3 className='font-medium text-xl opacity-65'>4.9</h3>
@@ -66,19 +66,19 @@ const UserRiding = () => {
               <h2 className="icon text-2xl"><i className="ri-map-pin-2-fill"></i></h2>
             </div>
             <div className="right-side flex flex-col">
-              <h2 className='font-semibold text-2xl'>562/11-A</h2>
-              <h4 className="text-lg font-thin">{ride?.destination}</h4>
+              <h2 className='font-semibold text-xl'>562/11-A</h2>
+              <h4 className="text-sm font-thin">{ride?.destination}</h4>
             </div>
           </div>
-          <div className="line w-full h-[1px] bg-black"></div>
+          <div className="line w-full h-[0.1px] bg-black"></div>
           <div className="payment flex items-center gap-5 my-5">
             <h2 className="icon font-semibold text-2xl"><i className="ri-layout-top-fill"></i></h2>
             <div className="right">
-              <h1 className='font-semibold text-2xl'>₹{ride?.fare}</h1>
-              <h2 className='font-thin text-xl'>Cash Cash</h2>
+              <h1 className='font-semibold text-xl'>₹{ride?.fare}</h1>
+              <h2 className='font-thin text-sm'>Cash Cash</h2>
             </div>
           </div>
-          <Link to="/user-home" className='flex items-center justify-center bg-green-600 px-4 py-4 w-full rounded-md text-white active:scale-95 hover:bg-green-700 cursor-pointer text-2xl transition-all'>Make a payment</Link>
+          <Link to="/user-home" className='flex items-center justify-center bg-green-600 px-4 py-2 w-full rounded-md text-white active:scale-95 hover:bg-green-700 cursor-pointer text-2xl transition-all'>Make a payment</Link>
         </div>
       </main>
     </>

@@ -27,13 +27,13 @@ const WaitingForDriver = (props) => {
           <div className="right flex flex-col">
             <h1 className='font-medium text-lg uppercase flex justify-end'>{props.ride?.captain.fullname.firstname + " " + props.ride?.captain.fullname.lastname}</h1>
             <h2 className='font-semibold uppercase text-2xl flex justify-end'>{props.ride?.captain.vehicle.plate}</h2>
-            <p className='font-thin text-lg flex justify-end'>White Suziki S-Presso LXI</p>
+            <p className='font-thin text-sm flex justify-end'>White Suziki S-Presso LXI</p>
             <div className="flex justify-end gap-2">
               <h3 className='font-medium text-xl'>Otp :- {props.ride?.otp}</h3>
             </div>
           </div>
         </div>
-        <div className="icon-div-container my-10 flex justify-between text-center px-5">
+        <div className="icon-div-container my-10 flex justify-between text-center px-2">
           <div className="first-icon">
             <div className="w-20 h-20 bg-[#eeee] rounded-full flex items-center justify-center">
               <i className="ri-shield-check-fill text-4xl text-blue-600"></i>
@@ -59,8 +59,8 @@ const WaitingForDriver = (props) => {
             <h2 className="icon text-2xl"><i className="ri-map-pin-2-fill"></i></h2>
           </div>
           <div className="right-side flex flex-col">
-            <h2 className='font-semibold text-2xl'>562/11-A</h2>
-            <h4 className="text-lg font-thin pr-2">{props.ride?.pickup}</h4>
+            <h2 className='font-semibold text-xl'>562/11-A</h2>
+            <h4 className="text-sm font-thin pr-5">{props.ride?.pickup}</h4>
             <div className="line w-[90vw] h-[1px] bg-black mt-2"></div>
           </div>
         </div>
@@ -69,16 +69,16 @@ const WaitingForDriver = (props) => {
             <h2 className="icon text-2xl"><i className="ri-checkbox-blank-fill"></i></h2>
           </div>
           <div className="right-side flex flex-col">
-            <h2 className='font-semibold text-2xl'>462/10-B</h2>
-            <h4 className="text-lg font-thin pr-2">{props.ride?.destination}</h4>
+            <h2 className='font-semibold text-xl'>462/10-B</h2>
+            <h4 className="text-sm font-thin pr-5">{props.ride?.destination}</h4>
             <div className="line w-[90vw] h-[1px] bg-black mt-2"></div>
           </div>
         </div>
         <div className="payment flex items-center gap-5">
           <h2 className="icon font-semibold text-2xl"><i className="ri-layout-top-fill"></i></h2>
           <div className="right">
-            <h1 className='font-semibold text-2xl'>₹{props.ride?.fare}</h1>
-            <h2 className='font-thin text-xl'>Cash Cash</h2>
+            <h1 className='font-semibold text-xl'>₹{props.ride?.fare}</h1>
+            <h2 className='font-thin text-sm'>Cash Cash</h2>
           </div>
         </div>
       </main>
