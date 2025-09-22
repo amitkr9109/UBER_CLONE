@@ -94,7 +94,6 @@ const createRideService = async ({ user, pickup, destination, vehicleType }) => 
     return ride;
 
   } catch (error) {
-    // console.log(error);
     throw new Error(error.message);
   }
 };
@@ -123,7 +122,6 @@ const confirmRideService = async ({ rideId, captain }) => {
     return ride; 
 
   } catch (error) {
-    // console.log(error);
     throw new Error(error.message);
   }
 };
@@ -160,7 +158,6 @@ const startRideService = async ({ rideId, otp, captain }) => {
     return ride;
 
   } catch (error) {
-    // console.log(error);
     throw new Error(error.message);
   }
 };
@@ -195,7 +192,6 @@ const endRideService = async ({ rideId, captain }) => {
     return ride;
 
   } catch (error) {
-    // console.log(error);
     throw new Error(error.message);
   }
 }

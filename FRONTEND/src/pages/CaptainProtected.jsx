@@ -27,7 +27,6 @@ const CaptainProtected = ({children}) => {
         setIsLoading(false);
       }
     }).catch(err => {
-      console.log("profile error-->", err);
       localStorage.removeItem("token");
       navigate("/captain-login");
     })

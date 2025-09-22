@@ -56,7 +56,6 @@ const authCaptain = async (req, res, next) => {
         return next();
 
     } catch (error) {
-        console.log(error);
         res.status(401).json({ message: error.message });
     }
 }

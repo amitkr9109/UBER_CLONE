@@ -25,10 +25,8 @@ const createRideController = async (req, res, next) => {
         res.status(200).json({ message: "ride created successfully", ride });
 
         const pickupCoordinates = await mapServive.getAddressCoordinateService(pickup);
-        console.log("pickupCoordinates --->", pickupCoordinates)
 
         const captainsInRadius = await mapServive.getCaptainsInRadiusService(pickupCoordinates.ltd, pickupCoordinates.lng, config.SEARCH_RADIUS_KM);
-        console.log(captainsInRadius);
         ride.otp = ""
 
         const rideWithUser = await rideModel.findOne({ _id: ride._id }).populate("user")
@@ -41,7 +39,6 @@ const createRideController = async (req, res, next) => {
         })
 
     } catch (error) {
-        console.log(error);
         res.status(400).json({ message: error.message });
     }
 };
@@ -86,7 +83,6 @@ const confirmRideController = async (req, res, next) => {
         return res.status(200).json({ message: "ride confirm successfully", ride });
 
     } catch (error) {
-        console.log(error);
         res.status(400).json({ message: error.message });
     }
 };
@@ -111,7 +107,6 @@ const startRideController = async (req, res, next) => {
         return res.status(200).json(ride);
 
     } catch (error) {
-        console.log((error));
         res.status(400).json({ message: error.message });
     }
 }
@@ -137,7 +132,6 @@ const endRideController = async (req, res, next) => {
         return res.status(200).json(ride);
 
     } catch (error) {
-        console.log((error));
         res.status(400).json({ message: error.message });
     }
 }

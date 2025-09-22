@@ -23,7 +23,6 @@ const getAddressCoordinateService = async (address) => {
         
 
     } catch (error) {
-      // console.log(error);
       throw new Error(error.message);
     }
 };

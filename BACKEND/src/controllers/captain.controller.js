@@ -37,7 +37,6 @@ const registerCaptainController = async (req, res, next) => {
         res.status(200).json({ captain, token, message: "Captain register successfully" });
 
     } catch (error) {
-       console.log(error);
        res.status(401).json({ message: error.message }); 
     };
 };
@@ -70,7 +69,6 @@ const loginCaptainController = async (req, res, next) => {
         res.status(200).json({ captain, token, message: "Captain login successfully" });
 
     } catch (error) {
-        console.log(error);
         res.status(401).json({ message: error.message });
     };
 };
@@ -80,7 +78,6 @@ const profileCaptainController = async (req, res, next) => {
     try {
         res.json(req.captain);
     } catch (error) {
-        console.log(error);
         res.status(401).json({ message: error.message });
     };
 };
@@ -94,7 +91,6 @@ const logOutCaptainController = async (req, res, next) => {
         res.send("Logout successfully");
         
     } catch (error) {
-        console.log(error);
         res.status(401).json({ message: error.message });
     };
 };

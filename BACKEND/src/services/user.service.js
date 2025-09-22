@@ -17,7 +17,6 @@ const createUserService = async ({ firstname, lastname, email, password }) => {
         return user;
 
     } catch (error) {
-        console.log(error);
         res.status(400).json({ message: error.message }); 
     };
 };

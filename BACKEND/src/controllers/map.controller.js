@@ -14,7 +14,6 @@ const getCoordinates = async (req, res, next) => {
         const coordinates = await mapService.getAddressCoordinateService(address);
         res.status(200).json({ success: true, address, coordinates });
     } catch (error) { 
-        // console.log(error);
         res.status(404).json({ message: error.message }); 
     } 
 };
@@ -34,7 +33,6 @@ const getDistanceTime = async (req, res, next) => {
         res.status(200).json({ success: true, origin, destination, data: distanceTime });
 
     } catch (error) {
-        // console.log(error);
         res.status(404).json({ message: error.message }); 
     }
 };
@@ -54,7 +52,6 @@ const getSuggestionsController = async (req, res, next) => {
         res.status(200).json({ success: true, suggestions });
 
     } catch (error) {
-        // console.log(error);
         res.status(404).json({ message: error.message });
     }
 };  

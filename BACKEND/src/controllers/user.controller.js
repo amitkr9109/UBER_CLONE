@@ -33,7 +33,6 @@ const registerUserController = async (req, res, next) => {
         res.status(200).json({ user, token, message: "User register successfully" });
 
     } catch (error) {
-      console.log(error);
       res.status(400).json({ message: error.message });  
     }
 };
@@ -66,7 +65,6 @@ const loginUserController = async (req, res, next) => {
         res.status(200).json({ user, token, message: "Login successfully" });
 
     } catch (error) {
-      console.log(error); 
       res.status(400).json({ message: error.message });  
     }
 };
@@ -75,7 +73,6 @@ const profileUserController = async (req, res, next) => {
     try {
         res.json(req.user);
     } catch (error) {
-        console.log(error);
         res.status(400).json({ message: error.message });
     };
 };
@@ -89,7 +86,6 @@ const logOutUserController = async (req, res, next) => {
         res.send("logout successfully");
 
     } catch (error) {
-        console.log(error);
         res.status(400).json({ message: error.message });
     };
 };

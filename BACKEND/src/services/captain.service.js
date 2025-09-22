@@ -22,7 +22,6 @@ const createCaptainService = async ({ firstname, lastname, email, password, colo
         return captain;
 
     } catch (error) {
-       console.log(error);
        res.status(401).json({ message: error.message }); 
     };
 };
