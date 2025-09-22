@@ -13,7 +13,7 @@ const config = require("./src/config/config");
 
 app.use(cors({
     origin: [
-        "https://uber-clone-backend-8rqd.onrender.com",
+        "https://uber-clone-frontend-b0h1.onrender.com",
         "http://localhost:5173"
     ],
     credentials: true
