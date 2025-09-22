@@ -13,7 +13,7 @@ const config = require("./src/config/config");
 
 app.use(cors({
     origin: [
-        "https://air-bnb-frontend.onrender.com",
+        
         "http://localhost:5173"
     ],
     credentials: true
